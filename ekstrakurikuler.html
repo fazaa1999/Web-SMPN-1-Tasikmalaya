@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekstrakurikuler SMP Negeri 1 Tasikmalaya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .ijmal_container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #b8babd, #56c4d8);
+        }
+
+        .ijmal_header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #d5e9f1;
+            border-radius: 8px;
+        }
+
+        .logo {
+            max-width: 120px;
+            height: auto;
+        }
+
+        .school-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        .slogan {
+            font-style: italic;
+            color: #2c3e50;
+            margin-top: 5px;
+        }
+
+        .ijmal_navbar {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .ijmal_navbar ul {
+            list-style-type: none;
+        }
+
+        .ijmal_navbar ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .ijmal_navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+
+        .ijmal_navbar a:hover {
+            background-color: #2980b9;
+        }
+
+        .ijmal_footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 15px 0;
+            background-color: #0694d1;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #2980b9;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #2c3e50;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            background-color: #ecf0f1;
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .ijmal_container {
+                padding: 10px;
+            }
+
+            .logo {
+                max-width: 80px;
+            }
+
+            .school-name {
+                font-size: 18px;
+            }
+
+            .slogan {
+                font-size: 14px;
+            }
+
+            .ijmal_navbar ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ijmal_navbar ul li {
+                margin: 10px 0;
+            }
+
+            .ijmal_navbar a {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+                margin-bottom: 15px;
+            }
+
+            .card-icon {
+                font-size: 40px;
+            }
+
+            .card-title {
+                font-size: 16px;
+            }
+
+            .card-description {
+                font-size: 14px;
+            }
+
+            .ijmal_footer {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ijmal_container">
+        <header class="ijmal_header">
+            <img src="LogoNesatta.png" alt="Logo SMPN 1 Tasikmalaya" class="logo">
+            <p class="school-name">SEKOLAH PENGGERAK</p>
+            <p class="school-name">SMP NEGERI 1 TASIKMALAYA</p>
+            <p class="slogan">"Belajar, Berkarya, Berprestasi"</p>
+        </header>
+
+        <nav class="ijmal_navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sejarahsingkat.html">Sejarah</a></li>
+                <li><a href="visimisi.html">Visi dan Misi</a></li>
+                <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                <li><a href="prestasi.html">Prestasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="bukutamu.html">Buku Tamu</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Ekstrakurikuler SMP Negeri 1 Tasikmalaya</h2>
+                <p>SMP Negeri 1 Tasikmalaya menawarkan berbagai kegiatan ekstrakurikuler yang mendukung 
+                    pengembangan keterampilan siswa di berbagai bidang, baik akademik maupun non-akademik. 
+                    Berikut adalah daftar kegiatan ekstrakurikuler yang tersedia:</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon">🌲</div>
+                        <h3 class="card-title">Pramuka</h3>
+                        <p class="card-description">Melatih kedisiplinan dan jiwa kepemimpinan.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⛹️‍♂️</div>
+                        <h3 class="card-title">Basket</h3>
+                        <p class="card-description">Mengembangkan kemampuan olahraga bola basket.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎭</div>
+                        <h3 class="card-title">Teater</h3>
+                        <p class="card-description">Meningkatkan kreativitas dalam seni peran.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎤</div>
+                        <h3 class="card-title">Paduan Suara</h3>
+                        <p class="card-description">Mengasah kemampuan vokal dan musik.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🩺</div>
+                        <h3 class="card-title">PMR</h3>
+                        <p class="card-description">Belajar tentang kesehatan dan kemanusiaan.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚽</div>
+                        <h3 class="card-title">Sepakbola</h3>
+                        <p class="card-description">Mengasah kemampuan tim dalam permainan sepakbola.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏐</div>
+                        <h3 class="card-title">Bola Voli</h3>
+                        <p class="card-description">Latihan fisik dan kerjasama dalam bola voli.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏸</div>
+                        <h3 class="card-title">Bulu Tangkis</h3>
+                        <p class="card-description">Mengembangkan keterampilan dalam bulu tangkis.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🥋</div>
+                        <h3 class="card-title">Karate</h3>
+                        <p class="card-description">Meningkatkan disiplin dan fisik melalui karate.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🥋</div>
+                        <h3 class="card-title">Taekwondo</h3>
+                        <p class="card-description">Mengembangkan teknik bela diri dan ketahanan fisik.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🥋</div>
+                        <h3 class="card-title">Pencak Silat</h3>
+                        <p class="card-description">Belajar seni bela diri pencak silat.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">Musikal</h3>
+                        <p class="card-description">Kegiatan seni dan musik yang mengasah kreativitas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎬</div>
+                        <h3 class="card-title">Jurnalistik</h3>
+                        <p class="card-description">Meningkatkan kemampuan menulis dan reporting.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎤</div>
+                        <h3 class="card-title">Gema</h3>
+                        <p class="card-description">Mengembangkan keterampilan di bidang seni suara.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👮‍♂️</div>
+                        <h3 class="card-title">PKS</h3>
+                        <p class="card-description">Melatih kedisiplinan dan jiwa kepemimpinan.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="ijmal_footer">
+            <p>&copy; 2024 Ijmal Nurfaza</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector(".ijmal_header");
+            header.style.opacity = 0;
+            header.style.transform = "translateY(-50px)";
+            setTimeout(() => {
+                header.style.transition = "all 1s ease-out";
+                header.style.opacity = 1;
+                header.style.transform = "translateY(0)";
+            }, 200);
+        });
+    
+        const scrollToTopBtn = document.createElement("button");
+        scrollToTopBtn.textContent = "↑";
+        scrollToTopBtn.style.position = "fixed";
+        scrollToTopBtn.style.bottom = "20px";
+        scrollToTopBtn.style.right = "20px";
+        scrollToTopBtn.style.padding = "10px 15px";
+        scrollToTopBtn.style.backgroundColor = "#3498db";
+        scrollToTopBtn.style.color = "white";
+        scrollToTopBtn.style.border = "none";
+        scrollToTopBtn.style.borderRadius = "50%";
+        scrollToTopBtn.style.boxShadow = "0px 4px 6px rgba(0,0,0,0.1)";
+        scrollToTopBtn.style.cursor = "pointer";
+        scrollToTopBtn.style.display = "none";
+        document.body.appendChild(scrollToTopBtn);
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+    
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    
+        const navbarLinks = document.querySelectorAll(".ijmal_navbar a");
+        navbarLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                navbarLinks.forEach(link => link.style.backgroundColor = "transparent");
+                this.style.backgroundColor = "#2980b9";
+            });
+        });
+    </script>    
+</body>
+</html>

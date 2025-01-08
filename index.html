@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website SMP Negeri 1 Tasikmalaya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ijmal_container">
+        <header class="ijmal_header">
+            <img src="LogoNesatta.png" alt="Logo SMPN 1 Tasikmalaya" class="logo">
+            <p class="school-name">SEKOLAH PENGGERAK</p>
+            <p class="school-name">SMP NEGERI 1 TASIKMALAYA</p>
+            <p class="slogan">"Belajar, Berkarya, Berprestasi"</p>
+        </header>
+
+        <nav class="ijmal_navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sejarahsingkat.html">Sejarah</a></li>
+                <li><a href="visimisi.html">Visi dan Misi</a></li>
+                <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                <li><a href="prestasi.html">Prestasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="bukutamu.html">Buku Tamu</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="ijmal_welcome">
+                <h2>Tentang Kami</h2>
+                <p>SMP Negeri 1 Tasikmalaya, atau yang lebih dikenal dengan nama Nesatta, merupakan sekolah 
+                    unggulan yang mengedepankan pendidikan berbasis Iman dan Taqwa, berbudaya lingkungan, 
+                    serta menjunjung tinggi konsep Sekolah Sehat. Kami berkomitmen menjadi pusat unggulan 
+                    dalam bidang akademik dan non-akademik, serta berperan aktif dalam membentuk generasi 
+                    muda yang berkualitas di Jawa Barat.</p>
+            </section>
+
+            <section class="ijmal_info">
+                <h2>Informasi Lainnya</h2>
+                <div class="info-item">
+                    <h3>Alamat</h3>
+                    <p>SMP Negeri 1 Tasikmalaya terletak di Jl. Otto Iskandardinata No. 21, 
+                        Kecamatan Tawang, Kota Tasikmalaya, Jawa Barat, Indonesia. Kami 
+                        berada di lokasi yang strategis dan mudah dijangkau.</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Kontak</h3>
+                    <p>Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:info@nesatta.sch.id">info@nesatta.sch.id</a></li>
+                        <li>Telepon: (0265) 123456</li>
+                        <li>WhatsApp: +62 812 3456 7890</li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="ijmal_footer">
+            <p>&copy; 2024 Ijmal Nurfaza</p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector(".ijmal_header");
+            header.style.opacity = 0;
+            header.style.transform = "translateY(-50px)";
+            setTimeout(() => {
+                header.style.transition = "all 1s ease-out";
+                header.style.opacity = 1;
+                header.style.transform = "translateY(0)";
+            }, 200);
+        });
+    
+        const scrollToTopBtn = document.createElement("button");
+        scrollToTopBtn.textContent = "↑";
+        scrollToTopBtn.style.position = "fixed";
+        scrollToTopBtn.style.bottom = "20px";
+        scrollToTopBtn.style.right = "20px";
+        scrollToTopBtn.style.padding = "10px 15px";
+        scrollToTopBtn.style.backgroundColor = "#3498db";
+        scrollToTopBtn.style.color = "white";
+        scrollToTopBtn.style.border = "none";
+        scrollToTopBtn.style.borderRadius = "50%";
+        scrollToTopBtn.style.boxShadow = "0px 4px 6px rgba(0,0,0,0.1)";
+        scrollToTopBtn.style.cursor = "pointer";
+        scrollToTopBtn.style.display = "none";
+        document.body.appendChild(scrollToTopBtn);
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+    
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    
+        const navbarLinks = document.querySelectorAll(".ijmal_navbar a");
+        navbarLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                navbarLinks.forEach(link => link.style.backgroundColor = "transparent");
+                this.style.backgroundColor = "#2980b9";
+            });
+        });
+    </script>
+</body>
+</html>
